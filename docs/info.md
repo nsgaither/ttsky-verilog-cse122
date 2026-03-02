@@ -7,14 +7,22 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
+# Hello Display
+
 ## How it works
 
-Explain how your project works
+The project cycles trhough the letters of HELLO on a single seven segment display. The module uses sequential logic to advance through to the next letter at the rising edge of an external 1Hz clock. The logic then loops back after the final O, and goes back to the inital H.
 
 ## How to test
 
-Explain how to use your project
+1. Connect a 1 Hz clock signal.
+2. Connect the active-low reset `rst_n` to a push button that pulls the signal low when pressed.
+3. Power on the board and apply the clock signal.
+4. Assert `rst_n` low briefly to reset the sequence to 'H', then release it.
+5. The display should cycle through H → E → L → L → O, changing letter every second.
+6. Loop O → H.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+- Single common-anode seven-segment display, connect the seven segment pins (a–g) to the corresponding output pins of the chip.
+- 1 Hz external clock source.
