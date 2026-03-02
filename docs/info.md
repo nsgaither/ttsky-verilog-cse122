@@ -8,9 +8,9 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 # Hello Display
+Inspired by: [550 : Sequential Circuit for 7-Segment Display](https://tinytapeout.com/chips/ttsky25a/tt_um_wokwi_441378095886546945)
 
 ## How it works
-Inspired by: [550 : Sequential Circuit for 7-Segment Display](https://tinytapeout.com/chips/ttsky25a/tt_um_wokwi_441378095886546945)
 The project cycles trhough the letters of HELLO on a single seven segment display. The module uses sequential logic to advance through to the next letter at the rising edge of an external 1Hz clock. The logic then loops back after the final O, and goes back to the inital H.
 
 ## How to test
