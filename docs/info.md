@@ -15,12 +15,11 @@ The project cycles trhough the letters of HELLO on a single seven segment displa
 
 ## How to test
 
-1. Connect a 1 Hz clock signal.
+1. Connect a 1 Hz clock signal `clk`.
 2. Connect the active-low reset `rst_n` to a push button that pulls the signal low when pressed.
-3. Power on the board and apply the clock signal.
-4. Assert `rst_n` low briefly to reset the sequence to 'H', then release it.
-5. The display should cycle through H → E → L → L → O, changing letter every second.
-6. Loop O → H.
+3. Assert `rst_n` low briefly to reset the sequence to 'H', then release it.
+4. The display should cycle through H → E → L → L → O, changing letter every second.
+5. Loop O → H.
 
 ## External hardware
 
