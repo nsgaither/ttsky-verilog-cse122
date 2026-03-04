@@ -84,7 +84,7 @@ initial begin // MAIN TESTBENCH
 
     // Release reset
     rst_n = 1;
-    @(posedge clk); #1;
+    #1;
 
    
     // Check each letter in sequence: H -> E -> L -> L -> O
