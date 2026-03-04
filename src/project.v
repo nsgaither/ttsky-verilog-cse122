@@ -21,6 +21,7 @@ module tt_um_example (
     localparam O = 7'h3F;
 
     reg [2:0] letter;
+    reg [6:0] seg;
 
     always @(posedge clk or negedge rst_n) begin
         if(!rst_n)    letter <= 3'd0;
